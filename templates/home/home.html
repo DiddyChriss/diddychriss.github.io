@@ -1,0 +1,84 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block cssjs %}
+      <!-- Compiled and minified jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+  <body class="body-home">
+{% endblock %}
+
+{% block nevbar %}
+                  <!--nevbar-->
+          <nav class="nav-1 nav-extended #cfd8dc blue-grey lighten-4 z-depth-5" style="height: 70px; opacity:0.65;" >
+            <div>
+              <a href="https://www.ridelectric.pl/">
+                  <img class="" id="logo" style="width:170px; height:80px; padding: 5px 0px 15px 15px;" src="{% static 'home/image/logo.png' %}" alt="image"/>
+              </a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a style="color:black;" href="/"><h5 style="padding: 10px 0px 0px 0px;">Home</h5></a></li>
+                  <li><a style="color:black;" href="/about"><h5 style="padding: 10px 0px 0px 0px;">About</h5></a></li>
+                  <li><a style="color:black;" href="/projects"><h5 style="padding: 10px 0px 0px 0px;">Projects</h5></a></li>
+                  <li><a style="color:black;" href="/skils"><h5 style="padding: 10px 0px 0px 0px;">Skils</h5></a></li>
+                  <li><a style="color:black;" href="/contact"><h5 style="padding: 10px 0px 0px 0px;">Contact</h5></a></li>
+              </ul>
+            </div>
+          </nav>
+{% endblock %}
+
+{% block content%}
+<div>
+    <div class="row z-depth-5" style="opacity:0.95; padding: 10px 0px 0px 0px;">
+        <div class="col s12 m7" >
+          <div class="card-home #cfd8dc blue-grey lighten-4" >
+            <div class="col s7" >
+              <div class="card-image #455a64 blue-grey darken-2">
+                <img class="img-home" src="{% static 'home/image/port5.jpg' %}">
+              </div>
+            </div>
+            <div class="card-content" >
+                <p class="center"> HELLO WORLD !!! </p>
+                <p>My name is Krzysztof Żak, but i think will be easier to You call me DiddyChriss 😉</p>
+                <p class="center">Python Developer </p>
+                <p class="center">(Full Stack Web Developer)</p>
+                <p class="">Check "about" page to know little bit more about me...Look at the "Projects" page!
+                    I'm still learning so we can build
+                    something Magnificent Together. Verifi my skills in "Skills" page, maybe i am the employee what
+                    You looking for...  If You have qouestions look up "Contact" page. I'm waitng for Your message!</p>
+                <p class="">
+                    <div class="card-image center">
+                        <img src="{% static 'home/image/about/p1.jpg' %}" alt="">
+                    </div>
+                </p>
+            </div>
+            <div class="card-action #455a64 blue-grey darken-2 center">
+              <a href="/about">About Me ( DiddyChriss ) </a>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row center">
+    <h5>
+        <a href="/projects" class="#cfd8dc blue-grey lighten-4 z-depth-5" style="color:black; opacity:0.8;">Python Learning In Progres...</a>
+    </h5>
+    <div class="row center">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <img class="img-home" src="{% static 'home/image/py.jpg' %}"  >
+        </div>
+    </div>
+</div>
+  </div>
+{% endblock %}

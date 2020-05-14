@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+  <html>
+    <head>
+          <link rel="stylesheet" href="{% static 'home/home.css' %}">
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+                <title>Portfolio DiddyChriss</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+          <link rel="shortcut icon" href="{% static 'home/image/ico.png' %}">
+          {% block cssjs %}
+
+          {% endblock %}
+    </head>
+    {% block body %}
+
+    {% endblock %}
+
+    {% block nevbar %}
+
+    {% endblock %}
+
+    {% block content %}
+
+    {% endblock %}
+
+         <p class="right"><i class="material-icons ">copyright</i>RIDELECTRIC.PL ALL RIGHTS RESERVED.<i class="material-icons ">pan_tool</i></p>
+
+    </body>
+  </html>

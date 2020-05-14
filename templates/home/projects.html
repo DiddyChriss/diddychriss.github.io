@@ -1,0 +1,73 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block cssjs %}
+    <!-- Compiled and minified jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+  <body class="body-projects">
+{% endblock %}
+
+{% block nevbar %}
+                <!--nevbar-->
+          <nav class="nav-extended black z-depth-5" style="height: 70px; opacity:0.4;" >
+            <div>
+              <a href="https://www.ridelectric.pl/">
+                  <img class="" id="logo" style="width:170px; height:80px; padding: 5px 0px 15px 15px;" src="{% static 'home/image/logo.png' %}" alt="image"/>
+              </a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a href="/"><h5 style="padding: 10px 0px 0px 0px;">Home</h5></a></li>
+                  <li><a href="/about"><h5 style="padding: 10px 0px 0px 0px;">About</h5></a></li>
+                  <li><a href="/projects"><h5 style="padding: 10px 0px 0px 0px;">Projects</h5></a></li>
+                  <li><a href="/skils"><h5 style="padding: 10px 0px 0px 0px;">Skils</h5></a></li>
+                  <li><a href="/contact"><h5 style="padding: 10px 0px 0px 0px;">Contact</h5></a></li>
+              </ul>
+            </div>
+          </nav>
+{% endblock %}
+
+{% block content %}
+<nav class="black z-depth-5" style="height: 60px; opacity:0.4; padding: 0px 0px 0px 30px;">
+  <div class="nav-wrapper"  >
+    <div class="col s12">
+      <a href="/" class="breadcrumb"><h9 style="color:white;">Home</h9></a>
+      <a href="/projects" class="breadcrumb"><h9 style="color:white;">Projects</h9></a>
+    </div>
+  </div>
+</nav>
+<div class=" container z-depth-5">
+    <div class="row center black z-depth-5" style=" color: white; opacity:0.6;">
+        <h4> Check Out My PROJECTS! New Coming Soon!</h4>
+    </div>
+    <div class="container carousel z-depth-5">
+        <div>
+            <a class="carousel-item" style="width:60%; height:80%;" href="/projects/todoapp">
+                <h5 class="center black z-depth-5" style="color: white; opacity:0.8;">Simple App (add-delete Item)</h5>
+                <img src="{% static 'home/image/carusel projects/additem.png' %}">
+            </a>
+        </div>
+        <a class="carousel-item" style="width:60%; height:80%;" href="/projects/codedadies">
+            <h5 class="center black z-depth-5" style="color: white; opacity:0.8;">Codedadie_list (web scraping)</h5>
+            <img src="{% static 'home/image/carusel projects/codedadieslist.png' %}">
+        </a>
+        <a class="carousel-item" style="width:60%; height:80%;" href="/">
+            <h5 class="center black z-depth-5" style="color: white; opacity:0.9;">Portfolio</h5>
+            <img src="{% static 'home/image/carusel projects/home.png' %}">
+        </a>
+        <a class="carousel-item" style="width:60%; height:80%;" href="/about">
+            <h5 class="center black z-depth-5" style="color: white; opacity:0.9;">Tic-Tac-Toe Game</h5>
+            <img src="{% static 'home/image/carusel projects/tictactoe2.png' %}">
+        </a>
+    </div>
+</div>
+
+
+{% endblock %}
+

@@ -1,0 +1,94 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block cssjs %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+{% endblock %}
+
+{% block body %}
+  <body class="body-skils">
+{% endblock %}
+
+{% block nevbar %}
+                <!--nevbar-->
+          <nav class="nav-extended black z-depth-5" style="height: 70px; opacity:0.6;" >
+            <div>
+              <a href="https://www.ridelectric.pl/">
+                  <img class="" id="logo" style="width:170px; height:80px; padding: 5px 0px 15px 15px;" src="{% static 'home/image/logo.png' %}" alt="image"/>
+              </a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a href="/"><h5 style="padding: 10px 0px 0px 0px;">Home</h5></a></li>
+                  <li><a href="/about"><h5 style="padding: 10px 0px 0px 0px;">About</h5></a></li>
+                  <li><a href="/projects"><h5 style="padding: 10px 0px 0px 0px;">Projects</h5></a></li>
+                  <li><a href="/skils"><h5 style="padding: 10px 0px 0px 0px;">Skils</h5></a></li>
+                  <li><a href="/contact"><h5 style="padding: 10px 0px 0px 0px;">Contact</h5></a></li>
+              </ul>
+            </div>
+          </nav>
+{% endblock %}
+
+{% block content %}
+<nav class="black z-depth-5" style="height: 60px; opacity:0.6; padding: 0px 0px 0px 30px;">
+  <div class="nav-wrapper"  >
+    <div class="col s12">
+      <a href="/" class="breadcrumb"><h9 style="color:white;">Home</h9></a>
+      <a href="/skils" class="breadcrumb"><h9 style="color:white;">Skils</h9></a>
+    </div>
+  </div>
+</nav>
+
+<div class="container center z-depth-5">
+    <blockquote class="black z-depth-5" style="opacity:0.8;">
+        <div class="row">
+            <h3 class="col black z-depth-5" style="color:white;">Programming Language:</h3>
+            <h3 class="col blue z-depth-5" style="color:white;">Python</h3>
+        </div>
+        <div class="row">
+            <h4 class="col black z-depth-5" style="color:white;">Web framework:</h4>
+            <h4 class="col blue z-depth-5" style="color:white;">Python Django</h4>
+        </div>
+        <div class="row">
+            <h4 class="col black z-depth-5" style="color:white;">Database:</h4>
+            <h4 class="col blue z-depth-5" style="color:white;">MySQL</h4>
+        </div>
+        <div class="row">
+            <h4 class="col black z-depth-5" style="color:white;">Version Control System:</h4>
+            <h4 class="col blue z-depth-5" style="color:white;">Git & GitHub</h4>
+        </div>
+        <div class="row">
+            <h4 class="col black z-depth-5" style="color:white;">Tols:</h4>
+            <div class="row">
+                <h4 class="col blue z-depth-5" style="color:white;">PyCharm</h4>
+                <h4  class="col blue z-depth-5"style="color:white; margin: 17px 0px 0px 10px;">Sublime Text</h4>
+                <h4  class="col blue z-depth-5"style="color:white; margin: 17px 0px 0px 10px;">Repl.it</h4>
+            </div>
+        </div>
+        <div class="row">
+            <h4 class="col black z-depth-5" style="color:white;">Operation System:</h4>
+            <div class="row">
+                <h4 class="col blue z-depth-5" style="color:white;">Linux</h4>
+                <h4  class="col blue z-depth-5"style="color:white; margin: 18px 0px 0px 10px;">Windows</h4>
+            </div>
+        </div>
+        <div class="row">
+            <h4 class="col black z-depth-5" style="color:white;">Familiar with:</h4>
+            <div class="row">
+                <h4 class="col blue z-depth-5" style="color:white;">HTML/CSS</h4>
+                <h4  class="col blue z-depth-5"style="color:white; margin: 18px 0px 0px 10px;">JavaScript</h4>
+            </div>
+        </div>
+    </blockquote>
+    <div class="black z-depth-5" style="opacity:0.8;">
+            <h5 class="col z-depth-5" style="color:white;">{Strong problem solving skills}</h5>
+            <h5 class="col z-depth-5" style="color:white;">{Excellent communication and analytical skills}</h5>
+            <h5 class="col z-depth-5" style="color:white;">{Excellent teamwork skills}</h5>
+            <h5 class="col z-depth-5" style="color:white;">{Highly organized}</h5>
+            <h5 class="col z-depth-5" style="color:white;">{Quick learning skills}</h5>
+            <h5 class="col z-depth-5" style="color:white;">{English B2}</h5>
+    </div>
+    <img class="img-about z-depth-5" src="{% static 'home/image/about/p3.jpg' %}" alt="">
+</div>
+
+{% endblock %}
+

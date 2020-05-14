@@ -1,0 +1,29 @@
+{% extends 'main/base.html' %}
+
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2>Type Here to Add text to Data</h2>
+            <form action="add/" method= "POST"> {% csrf_token %}
+                <input type="text" name="content" class="form-control" placeholder="type here">
+                <button type="submit" class="btn btn-primary mb-2">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="row" >
+        <div class="col" >
+                {% for instance in object_list %}
+                    <li class="list-group-item"  > {{instance.text}}
+                        <div class = "float-right">
+                            <form action="delete/{{instance.id}}/" method="POST"> {% csrf_token %}
+                                <button type="botton" class="btn btn-danger btn-sm " >Delete</button>
+                            </form>
+                        </div>
+                    </li>
+                {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
