@@ -1,11 +1,9 @@
 {% load static %}
 
 
-
-
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'home/home.css' %}">
     <title>Codedadies List</title>
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -15,15 +13,41 @@
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+    <div class="container" style="padding: 10px 0px 10px 0px;">
+        <a class="waves-effect waves-light btn right blue" href="/projects/" >
+            << back
+        </a>
+    </div>
+    <div class="col center container z-depth-5">
+        <div class="container" style="width: 45%;">
+            <h2 class="display-4">Web scraping of Craigslis</h2>
+            <div class="row">
+                <h4>look for a Gym Instructor or Python Tutor 😉</h4>
+                <p>original website:
+                    <a href="https://losangeles.craigslist.org/search/">https://losangeles.craigslist.org/search</a>
+                </p>
+            </div>
+        </div>
+        <div class="col center">
+            <a  href="https://github.com/DiddyChriss/codedadies_list">
+                <div class="col center">
+                    <p class="">Github Repository</p>
+                    <img class="" style="width:5%;" src="{% static 'home/image/gh.png' %}">
+                </div>
+            </a>
+        </div>
+    </div>
+
+
     <nav>
         <div class = "container nav-wrapper">
             <a href="/" class="brand-logo">Codedadies List</a>
             <ul id="nav-mobile" class="right">
-                <li ><a href="/projects/"> << Back</a></li>
+                <li ><a href="/projects/codedadies/"> Codedadies Home</a></li>
             </ul>
         </div>
     </nav>
-    <div class="container" >
+    <div class="container " >
     <h1 style="text-align: center"> What do you wont to serach for on Codedadies</h1>
     <div>
         <div class="row">

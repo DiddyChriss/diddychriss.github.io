@@ -17,7 +17,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
-from home.views import home, about, projects, skils, contact
+from home.views import home, about, projects, skils, contact, tictactoe
 from codedadies.views import codedadies_home, new_search
 from todoapp.views import home_view,delete_view, add_view
 
@@ -32,6 +32,7 @@ urlpatterns = [
     path('projects/new_search/', new_search, name='new_search'),
     path('projects/todoapp/', home_view, name='todoapp'),
     path('projects/todoapp/delete/<int:todo_id>/',delete_view ,name='delete'),
-    path('projects/todoapp/add/',add_view,name='add')
+    path('projects/todoapp/add/',add_view,name='add'),
+    path('projects/tictactoe',tictactoe,name='tictactoe')
 
               ]  + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

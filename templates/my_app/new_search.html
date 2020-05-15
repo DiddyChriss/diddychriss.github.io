@@ -5,11 +5,11 @@
     <div class="row">
     {% for post in final_posting %}
         <div class="col s4">
-          <div class="card">
+          <div class="card" style="height: 400px;">
             <div class="card-image">
-                <a href="{{ post.1 }} "> <img src="{{post.3 }}" alt=""></a>
+                <a class="images"  href="{{ post.1 }} "> <img style="height: 220px;" src="{{post.3 }}" alt=""></a>
             </div>
-              <div class="card-content">
+              <div class="card-content" style="height: 100px;">
                   <p>{{ post.0 }}</p>
               </div>
               <div class="card-action">

@@ -14,11 +14,11 @@ def about(request):
 
 
 def projects(request):
-    return render(request, 'home/projects.html', {})    #create home view
+    return render(request, 'home/projects.html', {})    #create projects view
 
 
 def skils(request):
-    return render(request, 'home/skils.html', {})   #create about view
+    return render(request, 'home/skils.html', {})   #create skils view
 
 
 def contact(request):
@@ -67,5 +67,5 @@ def contact(request):
     }
     return render(request, 'home/contact.html', context)                #create about view
 
-
-
+def tictactoe(request):
+    return render(request, 'home/tictactoe.html', {})   #create tictac toe view
