@@ -3,7 +3,13 @@
 
 {% block cssjs %}
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+         <!-- Compiled and minified jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
 {% endblock %}
 
 {% block body %}
@@ -32,19 +38,20 @@
 {% block content %}
 <nav class="black z-depth-5" style="height: 60px; opacity:0.6; padding: 0px 0px 0px 30px;">
   <div class="nav-wrapper"  >
-    <div class="col s12">
       <a href="/" class="breadcrumb"><h9 style="color:white;">Home</h9></a>
       <a href="/about" class="breadcrumb"><h9 style="color:white;">About</h9></a>
-    </div>
   </div>
 </nav>
 
-<div class="z-depth-5" style="padding: 20px;">
-    <div class="card horizontal black card-about" style="opacity:0.8;">
-      <div class="card-image">
-        <img  src="{% static 'home/image/about/about_leaf.jpg' %}">
-      </div>
-      <div class="card-stacked">
+
+
+
+
+    <div class="row card horizontal black z-depth-5" style="opacity:0.8; padding: 5%;">
+        <div class="card-image col s12 m6">
+          <img  src="{% static 'home/image/about/about_leaf.jpg' %}">
+        </div>
+      <div class="card-stacked col s12 m6">
         <div class="card-content">
             <p style="color:white;">I am an entrepreneur and owner of the ridelectric.pl brand.</p>
             <p style="color:white;">My hobby is Electromobility and Renewable Energy Sources. My next comercial
@@ -54,23 +61,23 @@
                 news about local
                 loading infrastrocture, and global news  about EV and PV subject.</p>
         </div>
-            <div class="card-action">
+          <div class="card-action">
               <a href="https://www.ridelectric.pl/">www.ridelectric.pl</a>
                 <img class="ico-about" src="{% static 'home/image/ico.png' %}">
-            </div>
-            <div class="card-action">
+          </div>
+          <div class="card-action">
               <a href="https://www.facebook.com/ridelectricKRK/">@ridelectricKRK</a>
-                <img class="ico-about" src="{% static 'home/image/about/logo_fb2.png' %}">
-            </div>
+              <img class="ico-about" src="{% static 'home/image/about/logo_fb2.png' %}">
+          </div>
         </div>
-      </div>
     </div>
-</div>
 
-<div class="z-depth-5" style="padding: 100px 20px 370px 0px;">
-    <div class="card horizontal black card-about right " style="opacity:0.7;">
+
+
+<div class="z-depth-5 col s12 m6" style="padding: 100px 20px 370px 0px;">
+    <div class="card horizontal black right  " style="opacity:0.7;">
         <div class="card-stacked">
-            <div class="card-content">
+            <div class="card-content" col s12 m6"">
                 <p style="color:white;">Coding has become my new Passion. My business experience helps me to
                     understand the customer a lot.</p>
                 <p style="color:white;">In this moment I feel very well as Django Full Stack Developer, but I'm open
@@ -86,18 +93,18 @@
 
 <div class="container z-depth-5" >
     <h3 class="center black z-depth-5" style="opacity:0.7; color:white;"> Hello DiddyChriss</h3>
-    <div class="card-image">
-        <img class="img-about left" style="padding: 10px 0px 10px 0px;"
+
+    <div class="">
+        <img class=" img-about " style="padding: 10px 0px 10px 0px;"
              src="{% static 'home/image/about/about_giz2.png' %}" alt="">
     </div>
-    <div class="card-image col">
-        <img class="img-about right " style="padding: 10px 0px 0px 0px;"
+    <div class="">
+        <img class=" img-about " style="padding: 10px 0px 0px 0px;"
              src="{% static 'home/image/about/about_family.jpg' %}" alt="">
-    </div>
-    <div class="card-image col">
-        <img class="img-about right" style="padding: 10px 0px 0px 0px;"
+        <img class="img-about " style="padding: 10px 0px 0px 0px;"
              src="{% static 'home/image/about/about_house.jpg' %}" alt="">
     </div>
+
 </div>
 {% endblock %}
 

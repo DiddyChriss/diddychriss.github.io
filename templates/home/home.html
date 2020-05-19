@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block cssjs %}
+
       <!-- Compiled and minified jquery -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- Compiled and minified CSS -->
@@ -16,16 +17,8 @@
 {% endblock %}
 
 {% block nevbar %}
-            <!-- Compiled and minified jquery -->
-            <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-            <!-- Compiled and minified CSS -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-            <!-- Compiled and minified JavaScript -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-            <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
-            <link rel="stylesheet" href="{% static 'home/home.css' %}">
                   <!--nevbar-->
-          <nav class="nav-1 nav-extended #cfd8dc blue-grey lighten-4 z-depth-5" style="height: 70px; opacity:0.65;" >
+          <nav class="nav-1 col s12 m6 nav-extended #cfd8dc blue-grey lighten-4 z-depth-5" style="height: 70px; opacity:0.65;" >
             <div>
               <a href="https://www.ridelectric.pl/">
                   <img class="" id="logo" style="width:170px; height:80px; padding: 5px 0px 15px 15px;" src="{% static 'home/image/logo.png' %}" alt="image"/>
@@ -44,33 +37,30 @@
 {% block content%}
 <div>
     <div class="row z-depth-5" style="opacity:0.95; padding: 10px 0px 0px 0px;">
-        <div class="col s12 m7" >
-          <div class="card-home #cfd8dc blue-grey lighten-4" >
-            <div class="col s7" >
-              <div class="card-image #455a64 blue-grey darken-2">
+          <div class="card-home col s12 m6 #cfd8dc blue-grey lighten-4" >
+              <div class="card-image col s12 m6  #455a64 blue-grey darken-2">
                 <img class="img-home" src="{% static 'home/image/port5.jpg' %}">
               </div>
+
+                <div class="card-content" >
+                    <p class="center"> HELLO WORLD !!! </p>
+                    <p>My name is Krzysztof Żak, but i think will be easier to You call me DiddyChriss 😉</p>
+                    <p class="center">Python Developer </p>
+                    <p class="center">(Full Stack Web Developer)</p>
+                    <p class="">Check "about" page to know little bit more about me...Look at the "Projects" page!
+                        I'm still learning so we can build
+                        something Magnificent Together. Verifi my skills in "Skills" page, maybe i am the employee what
+                        You looking for...  If You have qouestions look up "Contact" page. I'm waitng for Your message!</p>
+                    <p class="">
+                        <div class="card-image center">
+                            <img src="{% static 'home/image/about/p1.jpg' %}" alt="">
+                        </div>
+                    </p>
+                </div>
+                <div class="card-action #455a64 blue-grey darken-2 center">
+                  <a href="/about">About Me ( DiddyChriss ) </a>
+                </div>
             </div>
-            <div class="card-content" >
-                <p class="center"> HELLO WORLD !!! </p>
-                <p>My name is Krzysztof Żak, but i think will be easier to You call me DiddyChriss 😉</p>
-                <p class="center">Python Developer </p>
-                <p class="center">(Full Stack Web Developer)</p>
-                <p class="">Check "about" page to know little bit more about me...Look at the "Projects" page!
-                    I'm still learning so we can build
-                    something Magnificent Together. Verifi my skills in "Skills" page, maybe i am the employee what
-                    You looking for...  If You have qouestions look up "Contact" page. I'm waitng for Your message!</p>
-                <p class="">
-                    <div class="card-image center">
-                        <img src="{% static 'home/image/about/p1.jpg' %}" alt="">
-                    </div>
-                </p>
-            </div>
-            <div class="card-action #455a64 blue-grey darken-2 center">
-              <a href="/about">About Me ( DiddyChriss ) </a>
-            </div>
-            </div>
-        </div>
     </div>
 </div>
 <div class="row center">

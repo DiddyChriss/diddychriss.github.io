@@ -14,10 +14,14 @@
 }
 
 .img-home {
-    height: 100%;
-    width: 100%;
+    height: 50%;
+    width: 50%;
     padding: 5px 5px 0px 5px;
     overflow: hidden;
+}
+
+.img-about {
+    size: auto;
 }
 
 .card-home
@@ -38,24 +42,15 @@
 
 .card-about
 {
-    height: 60%;
-    width: 60%;
+    height: 100%;
+    width: 10-%;
     background-color: black;
     padding: 5px 5px 5px 5px;
     overflow: hidden;
 }
 
 
-.ico-about {
-    height: 70%;
-    width: 6%;
-    overflow: hidden;
-}
 
-.img-about {
-    height: 40%;
-    width: 40%;
-    overflow: hidden;
 }
 
 .body-skils {

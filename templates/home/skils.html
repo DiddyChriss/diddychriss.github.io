@@ -3,7 +3,14 @@
 
 {% block cssjs %}
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
 {% endblock %}
 
 {% block body %}
@@ -15,7 +22,8 @@
           <nav class="nav-extended black z-depth-5" style="height: 70px; opacity:0.6;" >
             <div>
               <a href="https://www.ridelectric.pl/">
-                  <img class="" id="logo" style="width:170px; height:80px; padding: 5px 0px 15px 15px;" src="{% static 'home/image/logo.png' %}" alt="image"/>
+                  <img class="" id="logo" style="width:170px; height:80px; padding: 5px 0px 15px 15px;"
+                       src="{% static 'home/image/logo.png' %}" alt="image"/>
               </a>
               <ul id="nav-mobile" class="right hide-on-med-and-down">
                   <li><a href="/"><h5 style="padding: 10px 0px 0px 0px;">Home</h5></a></li>
@@ -38,48 +46,49 @@
   </div>
 </nav>
 
-<div class="container center z-depth-5">
+<div class="container z-depth-5">
     <blockquote class="black z-depth-5" style="opacity:0.8;">
         <div class="row">
-            <h3 class="col black z-depth-5" style="color:white;">Programming Language:</h3>
-            <h3 class="col blue z-depth-5" style="color:white;">Python</h3>
+            <h3 class="col s12 m7 black z-depth-5" style="color:white;">Programming Language:</h3>
+            <h3 class="center col s12 m3 blue z-depth-5" style="color:white;">Python</h3>
         </div>
         <div class="row">
-            <h4 class="col black z-depth-5" style="color:white;">Web framework:</h4>
-            <h4 class="col blue z-depth-5" style="color:white;">Python Django</h4>
+            <h4 class="col s12 m4 black z-depth-5" style="color:white;">Web framework:</h4>
+            <h4 class="center col s12 m5 blue z-depth-5" style="color:white;">Python Django</h4>
         </div>
         <div class="row">
-            <h4 class="col black z-depth-5" style="color:white;">Database:</h4>
-            <h4 class="col blue z-depth-5" style="color:white;">MySQL</h4>
+            <h4 class="col s12 m4 black z-depth-5" style="color:white;">Database:</h4>
+            <h4 class="center col s12 m5 blue z-depth-5" style="color:white;">MySQL</h4>
         </div>
         <div class="row">
-            <h4 class="col black z-depth-5" style="color:white;">Version Control System:</h4>
-            <h4 class="col blue z-depth-5" style="color:white;">Git & GitHub</h4>
+            <h4 class="col s12 m6 black z-depth-5" style="color:white;">Version Control System:</h4>
+            <h4 class="center col s12 m5 blue z-depth-5" style="color:white;">Git & GitHub</h4>
         </div>
         <div class="row">
-            <h4 class="col black z-depth-5" style="color:white;">Tols:</h4>
+            <h4 class="col s12 m2 black z-depth-5" style="color:white;">Tols:</h4>
+
+                <h4 class="center col s12 m3 blue z-depth-5" style="color:white;">PyCharm</h4>
+                <h4 class="center col s12 m2  blue z-depth-5" style="color:white;">Repl.it</h4>
+
+            <h4 class="center col s12 m3 blue z-depth-5 center" style="color:white;">Sublime Text</h4>
+
+        </div>
+        <div class="row">
+            <h4 class="col s12 m5 black z-depth-5" style="color:white;">Operation System:</h4>
             <div class="row">
-                <h4 class="col blue z-depth-5" style="color:white;">PyCharm</h4>
-                <h4  class="col blue z-depth-5"style="color:white; margin: 17px 0px 0px 10px;">Sublime Text</h4>
-                <h4  class="col blue z-depth-5"style="color:white; margin: 17px 0px 0px 10px;">Repl.it</h4>
+                <h4 class="center col s12 m3 blue z-depth-5" style="color:white;">Linux</h4>
+                <h4  class="center col s12 m3 blue z-depth-5"style="color:white;">Windows</h4>
             </div>
         </div>
         <div class="row">
-            <h4 class="col black z-depth-5" style="color:white;">Operation System:</h4>
+            <h4 class="col s12 m4 black z-depth-5" style="color:white;">Familiar with:</h4>
             <div class="row">
-                <h4 class="col blue z-depth-5" style="color:white;">Linux</h4>
-                <h4  class="col blue z-depth-5"style="color:white; margin: 18px 0px 0px 10px;">Windows</h4>
-            </div>
-        </div>
-        <div class="row">
-            <h4 class="col black z-depth-5" style="color:white;">Familiar with:</h4>
-            <div class="row">
-                <h4 class="col blue z-depth-5" style="color:white;">HTML/CSS</h4>
-                <h4  class="col blue z-depth-5"style="color:white; margin: 18px 0px 0px 10px;">JavaScript</h4>
+                <h4 class="center col s12 m3 blue z-depth-5" style="color:white;">HTML/CSS</h4>
+                <h4  class="center col s12 m3 blue z-depth-5"style="color:white;">JavaScript</h4>
             </div>
         </div>
     </blockquote>
-    <div class="black z-depth-5" style="opacity:0.8;">
+    <div class=" center black z-depth-5" style="opacity:0.8;">
             <h5 class="col z-depth-5" style="color:white;">{Strong problem solving skills}</h5>
             <h5 class="col z-depth-5" style="color:white;">{Excellent communication and analytical skills}</h5>
             <h5 class="col z-depth-5" style="color:white;">{Excellent teamwork skills}</h5>
@@ -87,8 +96,9 @@
             <h5 class="col z-depth-5" style="color:white;">{Quick learning skills}</h5>
             <h5 class="col z-depth-5" style="color:white;">{English B2}</h5>
     </div>
-    <img class="img-about z-depth-5" src="{% static 'home/image/about/p3.jpg' %}" alt="">
 </div>
-
+    <div class=" center z-depth-5" >
+        <img class="img-about" src="{% static 'home/image/about/p3.jpg' %}" alt="">
+    </div>
 {% endblock %}
 
