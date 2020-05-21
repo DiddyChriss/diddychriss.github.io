@@ -1,27 +1,18 @@
 
 .body-projects {
-  background: url('image/tlo.png')no-repeat fixed;
-  background-position: center;
-  background-size: 118% 105%;
-  padding: 20px 20px 20px 20px;
+  background-color: #666666;
 }
 
 .body-home {
-  background: url('image/tlo2.png')no-repeat fixed;
-  background-position: center;
-  background-size: 120% 118%;
-  padding: 20px 20px 20px 20px;
+  background-color: #DDDDDD ;
+
 }
 
 .img-home {
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
     padding: 5px 5px 0px 5px;
     overflow: hidden;
-}
-
-.img-about {
-    size: auto;
 }
 
 .card-home
@@ -34,36 +25,38 @@
 }
 
 .body-about {
-  background: url('image/tlo4.png')no-repeat fixed;
+  background-color: #DDDDDD ;
   background-position: center;
-  background-size: 100% 180%;
-  padding: 20px 20px 20px 20px;
+
 }
 
 .card-about
 {
-    height: 100%;
-    width: 10-%;
+    height: 60%;
+    width: 60%;
     background-color: black;
     padding: 5px 5px 5px 5px;
     overflow: hidden;
 }
 
 
+.ico-about {
+    height: 70%;
+    width: 6%;
+    overflow: hidden;
+}
 
+.img-about {
+    height: 40%;
+    width: 40%;
+    overflow: hidden;
 }
 
 .body-skils {
-  background: url('image/tlo3.png')no-repeat fixed;
-  background-position: center;
-  background-size: 115% 114%;
-  padding: 20px 20px 20px 20px;
-}
+ background-color: #DDDDDD ;
+
 
 .body-contact {
-  background: url('image/tlo7.jpg')no-repeat fixed;
-  background-position: center;
-  background-size: 100% 125%;
-  padding: 20px 20px 20px 20px;
-}
+  background-color: #CCCCCC;
+
 

@@ -1,4 +1,6 @@
 $(document).ready(function(){
-          $('.carousel').carousel();
+            $('.carousel').carousel();
+            $('.sidenav').sidenav();
+             });
 
-        });
+

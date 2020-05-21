@@ -2,13 +2,18 @@
 {% load static %}
 
 {% block cssjs %}
-    <!-- Compiled and minified jquery -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"> </script>
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+             });
+    </script>
 {% endblock %}
 
 {% block body %}
@@ -17,24 +22,38 @@
 
 {% block nevbar %}
                 <!--nevbar-->
-          <nav class="nav-extended black z-depth-5" style="height: 70px; opacity:0.4;" >
-            <div>
-              <a href="https://www.ridelectric.pl/">
-                  <img class="" id="logo" style="width:170px; height:80px; padding: 5px 0px 15px 15px;" src="{% static 'home/image/logo.png' %}" alt="image"/>
-              </a>
-              <ul id="nav-mobile" class="right hide-on-med-and-down">
-                  <li><a href="/"><h5 style="padding: 10px 0px 0px 0px;">Home</h5></a></li>
-                  <li><a href="/about"><h5 style="padding: 10px 0px 0px 0px;">About</h5></a></li>
-                  <li><a href="/projects"><h5 style="padding: 10px 0px 0px 0px;">Projects</h5></a></li>
-                  <li><a href="/skils"><h5 style="padding: 10px 0px 0px 0px;">Skils</h5></a></li>
-                  <li><a href="/contact"><h5 style="padding: 10px 0px 0px 0px;">Contact</h5></a></li>
-              </ul>
-            </div>
-          </nav>
+<nav class="nav-extended black z-depth-5" style="height: 70px; opacity:0.7;" >
+    <a href="https://www.ridelectric.pl/">
+        <img class="" id="logo" style="width:170px; height:80px; padding: 5px 0px 15px 15px;"
+             src="{% static 'home/image/logo.png' %}" alt="image"/>
+    </a>
+    <a class="sidenav-trigger" style="color:white;" href="#" data-target="slide-out" >
+        <i class="material-icons">menu</i>
+    </a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/"><h5 style="padding: 10px 0px 0px 0px;">Home</h5></a></li>
+        <li><a href="/about"><h5 style="padding: 10px 0px 0px 0px;">About</h5></a></li>
+        <li><a href="/projects"><h5 style="padding: 10px 0px 0px 0px;">Projects</h5></a></li>
+        <li><a href="/skils"><h5 style="padding: 10px 0px 0px 0px;">Skils</h5></a></li>
+        <li><a href="/contact"><h5 style="padding: 10px 0px 0px 0px;">Contact</h5></a></li>
+    </ul>
+</nav>
+<ul id="slide-out" class="sidenav black z-depth-5" style=" opacity:0.7;">
+    <li><a href="/"  style="color:white;">
+        <i class="material-icons"  style="color:white;">home</i>Home</a></li>
+    <li><a href="/about" style="color:white;">
+        <i class="material-icons" style="color:white;">sentiment_very_satisfied</i>About</a></li>
+    <li><a href="/projects" style="color:white;">
+        <i class="material-icons" style="color:white;">subtitles</i>Projects</a></li>
+    <li><a href="/skils" style="color:white;">
+        <i class="material-icons" style="color:white;">folder_shared</i>Skils</a></li>
+    <li><a href="/contact" style="color:white;">
+        <i class="material-icons" style="color:white;">mail</i>Contact</a></li>
+</ul>
 {% endblock %}
 
 {% block content %}
-<nav class="black z-depth-5" style="height: 60px; opacity:0.4; padding: 0px 0px 0px 30px;">
+<nav class="black z-depth-5" style="height: 60px; opacity:0.7; padding: 0px 0px 0px 30px;">
   <div class="nav-wrapper"  >
     <div class="col s12">
       <a href="/" class="breadcrumb"><h9 style="color:white;">Home</h9></a>
@@ -42,28 +61,27 @@
     </div>
   </div>
 </nav>
-
 <div class="container z-depth-5">
-    <div class="row center black z-depth-5" style=" color: white; opacity:0.6;">
+    <div class="row center black z-depth-5" style=" color: white;">
         <h4> Check Out My PROJECTS! New Coming Soon!</h4>
     </div>
     <div class=" carousel z-depth-5">
         <div>
             <a class="carousel-item" style="width:60%; height:80%;" href="/projects/todoapp">
-                <h5 class="center black z-depth-5" style="color: white; opacity:0.8;">Simple App (add-delete Item)</h5>
+                <h5 class="center black z-depth-5" style="color: white;">Simple App (add-delete Item)</h5>
                 <img src="{% static 'home/image/carusel projects/additem.png' %}">
             </a>
         </div>
         <a class="carousel-item" style="width:60%; height:80%;" href="/projects/codedadies">
-            <h5 class="center black z-depth-5" style="color: white; opacity:0.8;">Codedadie_list (web scraping)</h5>
+            <h5 class="center black z-depth-5" style="color: white;">Codedadie_list (web scraping)</h5>
             <img src="{% static 'home/image/carusel projects/codedadieslist.png' %}">
         </a>
         <a class="carousel-item" style="width:60%; height:80%;" href="/">
-            <h5 class="center black z-depth-5" style="color: white; opacity:0.9;">Portfolio</h5>
+            <h5 class="center black z-depth-5" style="color: white;">Portfolio</h5>
             <img src="{% static 'home/image/carusel projects/home.png' %}">
         </a>
         <a class="carousel-item" style="width:60%; height:80%;" href="/projects/tictactoe">
-            <h5 class="center black z-depth-5" style="color: white; opacity:0.9;">Tic-Tac-Toe Game</h5>
+            <h5 class="center black z-depth-5" style="color: white;">Tic-Tac-Toe Game</h5>
             <img src="{% static 'home/image/carusel projects/tictactoe2.png' %}">
         </a>
     </div>
