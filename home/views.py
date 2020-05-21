@@ -46,7 +46,6 @@ def contact(request):
                                                       {
                                                           'name': name.capitalize(),
                                                           'surname': surname.capitalize(),
-                                                          'company': company.capitalize(),
                                                           'question': question
                                                       }
                                                     )     # render body from html(templates)

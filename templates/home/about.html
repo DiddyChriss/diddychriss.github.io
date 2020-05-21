@@ -23,9 +23,9 @@
 {% block nevbar %}
                 <!--nevbar-->
 <nav class="nav-extended black z-depth-5" style="height: 70px; opacity:0.9;" >
-        <a href="https://www.ridelectric.pl/">
+        <a href="/about/">
             <img class="" id="logo" style="width:170px; height:80px; padding: 5px 0px 15px 15px;"
-                 src="{% static 'home/image/logo.png' %}" alt="image"/>
+                 src="{% static 'home/image/logoDW.png' %}" alt="image"/>
         </a>
         <a class="sidenav-trigger" style="color:white;" href="#" data-target="slide-out" >
             <i class="material-icons">menu</i>
@@ -59,63 +59,66 @@
       <a href="/about" class="breadcrumb"><h9 style="color:white;">About</h9></a>
   </div>
 </nav>
-  <div class="row #cfd8dc blue-grey lighten-4">
-    <div class="col s12 m5 z-depth-5 #cfd8dc blue-grey lighten-3">
-      <div class="card #cfd8dc blue-grey lighten-3">
-        <div class="card-image #b0bec5 blue-grey lighten-3">
-           <img class="img-home " src="{% static 'home/image/about/about_leaf.jpg' %}">
-        </div>
-        <div class="card-content #b0bec5 blue-grey lighten-3">
-          <p>I am an entrepreneur and owner of the ridelectric.pl brand. My hobby is Electromobility and Renewable
-              Energy Sources. My next comercial project(in progres..) it's building a website ridelectric.pl with
-              e-store EV and Pv products, completely over again in Django.</p>
-            <p>   I also manage of funpage ridelectric.pl on Facebook (link bellow), by provading
-                news about local
-                loading infrastrocture, and global news  about EV and PV subject.</p>
-        </div>
-          <div class="card-action #cfd8dc blue-grey lighten-4">
-            <a href="https://www.ridelectric.pl/">www.ridelectric.pl</a>
-            <img class="ico-about" src="{% static 'home/image/ico.png' %}">
-          </div>
-          <div class="card-action #cfd8dc blue-grey lighten-4">
-              <a href="https://www.facebook.com/ridelectricKRK/">@ridelectricKRK</a>
-              <img class="ico-about" src="{% static 'home/image/about/logo_fb2.png' %}">
-          </div>
-      </div>
-    </div>
 
-
-    <div class="col s12 m8 z-depth-5 right #b0bec5 blue-grey lighten-3">
-      <div class="card #b0bec5 blue-grey lighten-3">
-          <div class="card-content col s12 m7 #b0bec5 blue-grey lighten-3">
-          <p>I am an entrepreneur and owner of the ridelectric.pl brand. My hobby is Electromobility and Renewable
-              Energy Sources. My next comercial project(in progres..) it's building a website ridelectric.pl with
-              e-store EV and Pv products, completely over again in Django.</p>
-            <p>   I also manage of funpage ridelectric.pl on Facebook (link bellow), by provading
-                news about local
-                loading infrastrocture, and global news  about EV and PV subject.</p>
-          </div>
-          <div class="card-image col s12 m5 #b0bec5 blue-grey lighten-3">
+<div class="row #DDDDDDy lighten-4" style="margin: 20px 0px 10px 0px;">
+    <div class="col s12 m6 z-depth-5 #b0bec5 blue-grey lighten-3">
+      <div class="card">
+          <div class="card-image col">
             <img src="{% static 'home/image/about/p2.jpg' %}">
           </div>
-
+          <div class="card-content col">
+          <p>Coding is my first passion and I’m looking for job opportunities for a Full-Stack Web Developer position.
+              My strongest ability, and the one I prefer most, is Back-End development, and my Front-End skills are an
+              addition to my overall Web Dev abilities in which I operate freely. </p>
+            <p>I’m confident that I can handle every coding job position within the Web Dev area, and with pleasure.
+                I systematically work on improving my skills, not only in areas needed for versatile work, but most
+                importantly in Python Coding (class, libraries and so on) ..</p>
+          </div>
       </div>
     </div>
-  </div>
-
-
-
+    <div class="col s12 m8 right z-depth-5 #b0bec5 blue-grey lighten-3 " style="margin: 20px 0px 10px 0px;">
+        <div class="col s12 m5 ">
+            <div class="card-content">
+              <p>I am also an entrepreneur and the owner of the ridelectric.pl brand. My hobby is Electromobility(EV )
+                  and Renewable Energy Sources(RES). My first comercial project is a website ridelectric.pl with e-store
+                  EV and Pv products, all built in Python-Django..</p>
+                <p>I also manage of funpage ridelectric.pl on Facebook (link bellow), by providing news about local
+                    infrastrocture, specific charging points and global news on the EV and Photovoltaic(PV) subject.</p>
+                <p>My interest and involvement in the EV and RES enviroment goes hand in hand with my current passion for
+                    coding and I’m hoping to get involved in a project that will become a denominator of those two interest
+                    points, and will allow me to utilize my knowledge and programming skills to further contribute to the
+                    development of Electromobility and Renewable Energy Sources.</p>
+            </div>
+            <div class="">
+                <div class="card-action center #cfd8dc blue-grey lighten-4">
+                    <a href="https://www.ridelectric.pl/">www.ridelectric.pl</a>
+                    <img class="ico-about" src="{% static 'home/image/ico.png' %}">
+                </div>
+                <div class="card-action center #cfd8dc blue-grey lighten-4">
+                   <a href="https://www.facebook.com/ridelectricKRK/">@ridelectricKRK</a>
+                   <img class="ico-about" src="{% static 'home/image/about/logo_fb2.png' %}">
+               </div>
+            </div>
+        </div>
+          <div class="col s12 m7 right #b0bec5 blue-grey lighten-3">
+              <div class="card">
+                <div class="card-image">
+                   <img class="img-home z-depth-5" src="{% static 'home/image/about/about_leaf.jpg' %}">
+                </div>
+              </div>
+          </div>
+    </div>
+</div>
 <div class="container z-depth-5 #cfd8dc blue-grey lighten-4" >
     <h3 class="center black z-depth-5" style="opacity:0.9; color:white;"> Hello DiddyChriss</h3>
-
-    <div class="center col s12 m10">
-        <img class=" img-about " style="padding: 10px 0px 10px 0px;"
+    <div class="center col s12 m10 z-depth-5">
+        <img class=" img-about" style=""
              src="{% static 'home/image/about/about_giz2.png' %}" alt="">
     </div>
-    <div class="row">
-        <img class="img-about col s12 m6 " style="padding: 10px 0px 0px 0px;"
+    <div class="row z-depth-5">
+        <img class="img-about col s12 m6" style=""
              src="{% static 'home/image/about/about_family.jpg' %}" alt="">
-        <img class="img-about col s12 m6" style="padding: 10px 0px 0px 0px;"
+        <img class="img-about col s12 m6 " style=""
              src="{% static 'home/image/about/about_house.jpg' %}" alt="">
     </div>
 
