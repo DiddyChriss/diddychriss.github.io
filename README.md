@@ -1,5 +1,4 @@
 # Portfolio 2.0
-> Very basic Portfolio with 5 tabs
 
 ## Table of contents
 * [General info](#general-info)
@@ -9,7 +8,7 @@
 * [Contact](#contact)
 
 ## General info
-
+> Very basic Portfolio with 5 tabs
 
 ## Technologies
 * Python - version 3.8
